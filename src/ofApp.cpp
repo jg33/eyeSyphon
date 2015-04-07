@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    ofSetWindowTitle("eyeSyphon");
     eye.setup(640, 480);
     syphon.setName("PS3 Eye");
     video.allocate(640, 480, OF_IMAGE_COLOR);
