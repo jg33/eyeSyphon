@@ -6,3 +6,7 @@ To compile, you'll need OpenFrameworks, ofxSyphon, ofxPS3Grabber and ofxKinect. 
 
 ##Releases
 There is a compiled, compressed Mac version in the bin folder.
+
+##To Do:
+* On-screen controls for framerate, etc.
+* Support for multiple Eyes
