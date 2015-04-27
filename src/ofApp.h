@@ -26,6 +26,12 @@ class ofApp : public ofBaseApp{
 private:
     ofxSyphonServer syphon;
     ofxPS3EyeGrabber eye;
-    ofImage video;
-		
+    ofImage video, prevFrame;
+    
+    bool bIsSmoothing;
+    bool bIsCatchingGlitches= true ;
+    
+    float glitchThreshold = 50
+    ;
+    float avgDiff;
 };
