@@ -5,4 +5,8 @@ A super simple PS3 Eye -> Syphon app. It grabs video from the first USB-connecte
 To compile, you'll need OpenFrameworks, ofxSyphon, ofxPS3Grabber and ofxKinect. Since ofxSyphon is not supported for 64-bit OF yet, the project must be compiled for i386.
 
 ##Releases
-There is a compiled version in the bin folder.
+There is a compiled, compressed Mac version in the bin folder.
+
+##To Do:
+* On-screen controls for framerate, etc.
+* Support for multiple Eyes
