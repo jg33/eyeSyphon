@@ -6,6 +6,7 @@ void ofApp::setup(){
     ofSetFrameRate(60);
     ofSetVerticalSync(true);
     eye.setup(640, 480);
+    eye.setAutogain(false);
     //eye.setDesiredFrameRate(30);
     
     
@@ -16,6 +17,15 @@ void ofApp::setup(){
     video.clear();
     prevFrame.clear();
     //eye.setGain(255);
+    
+    
+    canvas = new ofxUISuperCanvas("Eye Controls");
+    canvas->addSpacer();
+    canvas->addSlider("Gain", 0, 61, 32);
+    canvas->addSpacer();
+    canvas->addSlider("Glitch Threshold", 0, 100, 40);
+    ofAddListener(canvas->newGUIEvent,this,&ofApp::guiEvent);
+
 }
 
 //--------------------------------------------------------------
@@ -69,9 +79,30 @@ void ofApp::draw(){
     syphon.publishScreen();
 }
 
+void ofApp::guiEvent(ofxUIEventArgs &e){
+    if(e.getName() == "Gain"){
+        gain = e.getSlider()->getValue();
+        eye.setGain(gain);
+    } else if(e.getName() == "Glitch Threshold"){
+        glitchThreshold = e.getSlider()->getValue();
+        //eye.setGain(gain);
+    }
+    
+}
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    switch (key) {
+        case 'e':
+            canvas->enable();
+            break;
+            
+        case 'd':
+            canvas->disable();
+            break;
+        default:
+            break;
+    }
 }
 
 //--------------------------------------------------------------

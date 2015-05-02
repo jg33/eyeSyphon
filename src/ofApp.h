@@ -3,7 +3,7 @@
 #include "ofMain.h"
 #include "ofxSyphon.h"
 #include "ofxPS3EyeGrabber.h"
-
+#include "ofxUI.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,6 +22,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    void guiEvent(ofxUIEventArgs &e);
+    
     
 private:
     ofxSyphonServer syphon;
@@ -33,4 +35,8 @@ private:
     
     float glitchThreshold = 40;
     float avgDiff;
+    
+    float gain = 32;
+    
+    ofxUISuperCanvas * canvas;
 };
