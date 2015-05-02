@@ -2,90 +2,54 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetWindowTitle("eyeSyphon");
-    ofSetFrameRate(60);
-    ofSetVerticalSync(true);
-    eye.setup(640, 480);
-    eye.setAutogain(false);
-    //eye.setDesiredFrameRate(30);
+    eye.setup(640,480);
+    eye.listDevices();
+    eye.setUseTexture(false);
+    eye.initGrabber(640, 480, true);
+    eye.setAutoGainAndShutter(false);
     
+    eye.setShutter(0.1);
+    syphon.setName("Eye Syphon");
     
-    syphon.setName("PS3 Eye");
-    video.allocate(640, 480, OF_IMAGE_COLOR);
-    prevFrame.allocate(640, 480, OF_IMAGE_COLOR);
-    
-    video.clear();
-    prevFrame.clear();
-    //eye.setGain(255);
-    
+    cout<<"format: "<<eye.getPixelFormat()<<endl;
     
     canvas = new ofxUISuperCanvas("Eye Controls");
     canvas->addSpacer();
-    canvas->addSlider("Gain", 0, 61, 32);
-    canvas->addSpacer();
-    canvas->addSlider("Glitch Threshold", 0, 100, 40);
+    canvas->addSlider("Gain", 0, 1, 0.5);
     ofAddListener(canvas->newGUIEvent,this,&ofApp::guiEvent);
-
+    
+    
+    
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
     eye.update();
-
+    
     if(eye.isFrameNew()){
-        if(bIsCatchingGlitches){
-            avgDiff =0;
-            
-            if(prevFrame.getPixels().size()>0){
-                
-                for(int i =0;i<eye.getPixels().size();i++){
-                    avgDiff += abs(eye.getPixels()[i]-prevFrame.getPixels()[i]);
-
-                }
-                
-                avgDiff /= eye.getPixels().size();
-                
-            }
-            prevFrame = eye.getPixels();
-            
-        }
-        
-        if(!bIsCatchingGlitches || avgDiff <= glitchThreshold){
-            
-            video.setFromPixels(eye.getPixels());
-
-            
-        }else if(bIsCatchingGlitches && avgDiff > glitchThreshold) {
-            cout<<"caught a glitch on 1! "<< avgDiff<<endl;
-            video.setFromPixels(eye.getPixels());
-
-        } else {
-            //video.setFromPixels(eye.getPixels());
-            
-        }
-        
-    }else{
-        //bHasNewFrame = false;
+        eye.setLed(true);
     }
-
+    else eye.setLed(false);
     
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(0);
-    video.draw(0, 0);
+    ofImage pix ;
+    //pix.allocate(640, 480, eye.getPixelFormat());
+    pix.setFromPixels(eye.getPixelsRef());
+    
+    pix.draw(0, 0);
+    
     syphon.publishScreen();
 }
 
+
 void ofApp::guiEvent(ofxUIEventArgs &e){
     if(e.getName() == "Gain"){
-        gain = e.getSlider()->getValue();
-        eye.setGain(gain);
-    } else if(e.getName() == "Glitch Threshold"){
-        glitchThreshold = e.getSlider()->getValue();
-        //eye.setGain(gain);
+        eye.setGain(e.getSlider()->getValue());
     }
     
 }
@@ -93,54 +57,55 @@ void ofApp::guiEvent(ofxUIEventArgs &e){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     switch (key) {
-        case 'e':
-            canvas->enable();
+        case 'c':
+            eye.close();
             break;
             
-        case 'd':
-            canvas->disable();
+        case 'o':
+            eye.initGrabber(640,480);
             break;
         default:
             break;
     }
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-
+    
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
+void ofApp::dragEvent(ofDragInfo dragInfo){
+    
 }

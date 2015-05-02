@@ -58,6 +58,23 @@
 		882D4C901AF478CE00FFB1E8 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 882D4C8B1AF478CE00FFB1E8 /* tinyxml.cpp */; };
 		882D4C911AF478CE00FFB1E8 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 882D4C8D1AF478CE00FFB1E8 /* tinyxmlerror.cpp */; };
 		882D4C921AF478CE00FFB1E8 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 882D4C8E1AF478CE00FFB1E8 /* tinyxmlparser.cpp */; };
+		882D4CD01AF4AEF400FFB1E8 /* AGC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CAC1AF4AEF400FFB1E8 /* AGC.mm */; };
+		882D4CD11AF4AEF400FFB1E8 /* BayerConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CAD1AF4AEF400FFB1E8 /* BayerConverter.mm */; };
+		882D4CD21AF4AEF400FFB1E8 /* ControllerInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CAE1AF4AEF400FFB1E8 /* ControllerInterface.mm */; };
+		882D4CD31AF4AEF400FFB1E8 /* FrameCounter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CAF1AF4AEF400FFB1E8 /* FrameCounter.mm */; };
+		882D4CD41AF4AEF400FFB1E8 /* GenericDriver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CB01AF4AEF400FFB1E8 /* GenericDriver.mm */; };
+		882D4CD51AF4AEF400FFB1E8 /* Histogram.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CB11AF4AEF400FFB1E8 /* Histogram.mm */; };
+		882D4CD61AF4AEF400FFB1E8 /* LookUpTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC31AF4AEF400FFB1E8 /* LookUpTable.mm */; };
+		882D4CD71AF4AEF400FFB1E8 /* MiniGraphicsTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC41AF4AEF400FFB1E8 /* MiniGraphicsTools.cpp */; };
+		882D4CD81AF4AEF400FFB1E8 /* MiscTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC51AF4AEF400FFB1E8 /* MiscTools.cpp */; };
+		882D4CD91AF4AEF400FFB1E8 /* MyCameraCentral.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC61AF4AEF400FFB1E8 /* MyCameraCentral.mm */; };
+		882D4CDA1AF4AEF400FFB1E8 /* MyCameraDriver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC71AF4AEF400FFB1E8 /* MyCameraDriver.mm */; };
+		882D4CDB1AF4AEF400FFB1E8 /* MyCameraInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC81AF4AEF400FFB1E8 /* MyCameraInfo.mm */; };
+		882D4CDC1AF4AEF400FFB1E8 /* OV534Driver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CC91AF4AEF400FFB1E8 /* OV534Driver.mm */; };
+		882D4CDD1AF4AEF400FFB1E8 /* Resolvers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CCA1AF4AEF400FFB1E8 /* Resolvers.cpp */; };
+		882D4CDE1AF4AEF400FFB1E8 /* Sensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CCB1AF4AEF400FFB1E8 /* Sensor.mm */; };
+		882D4CDF1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CCD1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.mm */; };
+		882D4CE01AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 882D4CCF1AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.mm */; };
 		88F918D41AD4405E0045B219 /* ofxPS3EyeGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88F918CD1AD4405E0045B219 /* ofxPS3EyeGrabber.cpp */; };
 		88F918D51AD4405E0045B219 /* ps3eye.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88F918D21AD4405E0045B219 /* ps3eye.cpp */; };
 		88F918E91AD440640045B219 /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F918DA1AD440640045B219 /* ofxSyphonClient.mm */; };
@@ -234,6 +251,41 @@
 		882D4C8C1AF478CE00FFB1E8 /* tinyxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
 		882D4C8D1AF478CE00FFB1E8 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
 		882D4C8E1AF478CE00FFB1E8 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		882D4CAC1AF4AEF400FFB1E8 /* AGC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AGC.mm; sourceTree = "<group>"; };
+		882D4CAD1AF4AEF400FFB1E8 /* BayerConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BayerConverter.mm; sourceTree = "<group>"; };
+		882D4CAE1AF4AEF400FFB1E8 /* ControllerInterface.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ControllerInterface.mm; sourceTree = "<group>"; };
+		882D4CAF1AF4AEF400FFB1E8 /* FrameCounter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FrameCounter.mm; sourceTree = "<group>"; };
+		882D4CB01AF4AEF400FFB1E8 /* GenericDriver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GenericDriver.mm; sourceTree = "<group>"; };
+		882D4CB11AF4AEF400FFB1E8 /* Histogram.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Histogram.mm; sourceTree = "<group>"; };
+		882D4CB31AF4AEF400FFB1E8 /* AGC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGC.h; sourceTree = "<group>"; };
+		882D4CB41AF4AEF400FFB1E8 /* BayerConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BayerConverter.h; sourceTree = "<group>"; };
+		882D4CB51AF4AEF400FFB1E8 /* ControllerInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
+		882D4CB61AF4AEF400FFB1E8 /* FrameCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameCounter.h; sourceTree = "<group>"; };
+		882D4CB71AF4AEF400FFB1E8 /* GenericDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericDriver.h; sourceTree = "<group>"; };
+		882D4CB81AF4AEF400FFB1E8 /* GlobalDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefs.h; sourceTree = "<group>"; };
+		882D4CB91AF4AEF400FFB1E8 /* Histogram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
+		882D4CBA1AF4AEF400FFB1E8 /* LookUpTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookUpTable.h; sourceTree = "<group>"; };
+		882D4CBB1AF4AEF400FFB1E8 /* MiniGraphicsTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiniGraphicsTools.h; sourceTree = "<group>"; };
+		882D4CBC1AF4AEF400FFB1E8 /* MiscTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiscTools.h; sourceTree = "<group>"; };
+		882D4CBD1AF4AEF400FFB1E8 /* MyCameraCentral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCameraCentral.h; sourceTree = "<group>"; };
+		882D4CBE1AF4AEF400FFB1E8 /* MyCameraDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCameraDriver.h; sourceTree = "<group>"; };
+		882D4CBF1AF4AEF400FFB1E8 /* MyCameraInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCameraInfo.h; sourceTree = "<group>"; };
+		882D4CC01AF4AEF400FFB1E8 /* OV534Driver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OV534Driver.h; sourceTree = "<group>"; };
+		882D4CC11AF4AEF400FFB1E8 /* Resolvers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resolvers.h; sourceTree = "<group>"; };
+		882D4CC21AF4AEF400FFB1E8 /* Sensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sensor.h; sourceTree = "<group>"; };
+		882D4CC31AF4AEF400FFB1E8 /* LookUpTable.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LookUpTable.mm; sourceTree = "<group>"; };
+		882D4CC41AF4AEF400FFB1E8 /* MiniGraphicsTools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MiniGraphicsTools.cpp; sourceTree = "<group>"; };
+		882D4CC51AF4AEF400FFB1E8 /* MiscTools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MiscTools.cpp; sourceTree = "<group>"; };
+		882D4CC61AF4AEF400FFB1E8 /* MyCameraCentral.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraCentral.mm; sourceTree = "<group>"; };
+		882D4CC71AF4AEF400FFB1E8 /* MyCameraDriver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraDriver.mm; sourceTree = "<group>"; };
+		882D4CC81AF4AEF400FFB1E8 /* MyCameraInfo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraInfo.mm; sourceTree = "<group>"; };
+		882D4CC91AF4AEF400FFB1E8 /* OV534Driver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OV534Driver.mm; sourceTree = "<group>"; };
+		882D4CCA1AF4AEF400FFB1E8 /* Resolvers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resolvers.cpp; sourceTree = "<group>"; };
+		882D4CCB1AF4AEF400FFB1E8 /* Sensor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Sensor.mm; sourceTree = "<group>"; };
+		882D4CCC1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMacamPs3Eye.h; sourceTree = "<group>"; };
+		882D4CCD1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxMacamPs3Eye.mm; sourceTree = "<group>"; };
+		882D4CCE1AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PS3EyeWindowAppDelegate.h; sourceTree = "<group>"; };
+		882D4CCF1AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PS3EyeWindowAppDelegate.mm; sourceTree = "<group>"; };
 		88F918CD1AD4405E0045B219 /* ofxPS3EyeGrabber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPS3EyeGrabber.cpp; sourceTree = "<group>"; };
 		88F918CE1AD4405E0045B219 /* ofxPS3EyeGrabber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPS3EyeGrabber.h; sourceTree = "<group>"; };
 		88F918D21AD4405E0045B219 /* ps3eye.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ps3eye.cpp; sourceTree = "<group>"; };
@@ -473,6 +525,73 @@
 			);
 			name = libs;
 			path = ../../../addons/ofxXmlSettings/libs;
+			sourceTree = "<group>";
+		};
+		882D4CA91AF4AEF400FFB1E8 /* ofxMacamPs3Eye */ = {
+			isa = PBXGroup;
+			children = (
+				882D4CAA1AF4AEF400FFB1E8 /* src */,
+			);
+			name = ofxMacamPs3Eye;
+			sourceTree = "<group>";
+		};
+		882D4CAA1AF4AEF400FFB1E8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				882D4CAB1AF4AEF400FFB1E8 /* macam */,
+				882D4CCC1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.h */,
+				882D4CCD1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.mm */,
+				882D4CCE1AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.h */,
+				882D4CCF1AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.mm */,
+			);
+			name = src;
+			path = ../../../addons/ofxMacamPs3Eye/src;
+			sourceTree = "<group>";
+		};
+		882D4CAB1AF4AEF400FFB1E8 /* macam */ = {
+			isa = PBXGroup;
+			children = (
+				882D4CAC1AF4AEF400FFB1E8 /* AGC.mm */,
+				882D4CAD1AF4AEF400FFB1E8 /* BayerConverter.mm */,
+				882D4CAE1AF4AEF400FFB1E8 /* ControllerInterface.mm */,
+				882D4CAF1AF4AEF400FFB1E8 /* FrameCounter.mm */,
+				882D4CB01AF4AEF400FFB1E8 /* GenericDriver.mm */,
+				882D4CB11AF4AEF400FFB1E8 /* Histogram.mm */,
+				882D4CB21AF4AEF400FFB1E8 /* include */,
+				882D4CC31AF4AEF400FFB1E8 /* LookUpTable.mm */,
+				882D4CC41AF4AEF400FFB1E8 /* MiniGraphicsTools.cpp */,
+				882D4CC51AF4AEF400FFB1E8 /* MiscTools.cpp */,
+				882D4CC61AF4AEF400FFB1E8 /* MyCameraCentral.mm */,
+				882D4CC71AF4AEF400FFB1E8 /* MyCameraDriver.mm */,
+				882D4CC81AF4AEF400FFB1E8 /* MyCameraInfo.mm */,
+				882D4CC91AF4AEF400FFB1E8 /* OV534Driver.mm */,
+				882D4CCA1AF4AEF400FFB1E8 /* Resolvers.cpp */,
+				882D4CCB1AF4AEF400FFB1E8 /* Sensor.mm */,
+			);
+			path = macam;
+			sourceTree = "<group>";
+		};
+		882D4CB21AF4AEF400FFB1E8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				882D4CB31AF4AEF400FFB1E8 /* AGC.h */,
+				882D4CB41AF4AEF400FFB1E8 /* BayerConverter.h */,
+				882D4CB51AF4AEF400FFB1E8 /* ControllerInterface.h */,
+				882D4CB61AF4AEF400FFB1E8 /* FrameCounter.h */,
+				882D4CB71AF4AEF400FFB1E8 /* GenericDriver.h */,
+				882D4CB81AF4AEF400FFB1E8 /* GlobalDefs.h */,
+				882D4CB91AF4AEF400FFB1E8 /* Histogram.h */,
+				882D4CBA1AF4AEF400FFB1E8 /* LookUpTable.h */,
+				882D4CBB1AF4AEF400FFB1E8 /* MiniGraphicsTools.h */,
+				882D4CBC1AF4AEF400FFB1E8 /* MiscTools.h */,
+				882D4CBD1AF4AEF400FFB1E8 /* MyCameraCentral.h */,
+				882D4CBE1AF4AEF400FFB1E8 /* MyCameraDriver.h */,
+				882D4CBF1AF4AEF400FFB1E8 /* MyCameraInfo.h */,
+				882D4CC01AF4AEF400FFB1E8 /* OV534Driver.h */,
+				882D4CC11AF4AEF400FFB1E8 /* Resolvers.h */,
+				882D4CC21AF4AEF400FFB1E8 /* Sensor.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 		88F918CB1AD4405E0045B219 /* ofxPS3EyeGrabber */ = {
@@ -721,6 +840,7 @@
 				88F918D61AD440640045B219 /* ofxSyphon */,
 				882D4BFA1AF478B000FFB1E8 /* ofxUI */,
 				882D4C861AF478CE00FFB1E8 /* ofxXmlSettings */,
+				882D4CA91AF4AEF400FFB1E8 /* ofxMacamPs3Eye */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -895,30 +1015,40 @@
 			files = (
 				882D4C771AF478B000FFB1E8 /* ofxUIScrollableCanvas.cpp in Sources */,
 				882D4C831AF478B000FFB1E8 /* ofxUIWaveform.cpp in Sources */,
+				882D4CD11AF4AEF400FFB1E8 /* BayerConverter.mm in Sources */,
+				882D4CDC1AF4AEF400FFB1E8 /* OV534Driver.mm in Sources */,
 				88F919701AD443C80045B219 /* keep_alive.c in Sources */,
 				88F919741AD443C80045B219 /* usb_libusb10.c in Sources */,
 				882D4C7F1AF478B000FFB1E8 /* ofxUITextInput.cpp in Sources */,
+				882D4CD91AF4AEF400FFB1E8 /* MyCameraCentral.mm in Sources */,
 				882D4C7D1AF478B000FFB1E8 /* ofxUITabBar.cpp in Sources */,
 				882D4C901AF478CE00FFB1E8 /* tinyxml.cpp in Sources */,
 				88F919711AD443C80045B219 /* loader.c in Sources */,
 				882D4C691AF478B000FFB1E8 /* ofxUIImageSlider.cpp in Sources */,
 				882D4C671AF478B000FFB1E8 /* ofxUIImageButton.cpp in Sources */,
+				882D4CD31AF4AEF400FFB1E8 /* FrameCounter.mm in Sources */,
+				882D4CDF1AF4AEF400FFB1E8 /* ofxMacamPs3Eye.mm in Sources */,
 				882D4C681AF478B000FFB1E8 /* ofxUIImageSampler.cpp in Sources */,
 				88F919721AD443C80045B219 /* registration.c in Sources */,
+				882D4CD61AF4AEF400FFB1E8 /* LookUpTable.mm in Sources */,
 				88F9196E1AD443C80045B219 /* core.c in Sources */,
 				882D4C801AF478B000FFB1E8 /* ofxUIToggle.cpp in Sources */,
 				882D4C7A1AF478B000FFB1E8 /* ofxUISpacer.cpp in Sources */,
+				882D4CD41AF4AEF400FFB1E8 /* GenericDriver.mm in Sources */,
 				882D4C921AF478CE00FFB1E8 /* tinyxmlparser.cpp in Sources */,
 				88F919731AD443C80045B219 /* tilt.c in Sources */,
 				882D4C711AF478B000FFB1E8 /* ofxUIMultiImageToggle.cpp in Sources */,
 				882D4C701AF478B000FFB1E8 /* ofxUIMultiImageButton.cpp in Sources */,
+				882D4CDE1AF4AEF400FFB1E8 /* Sensor.mm in Sources */,
 				882D4C751AF478B000FFB1E8 /* ofxUIRectangle.cpp in Sources */,
 				882D4C8F1AF478CE00FFB1E8 /* ofxXmlSettings.cpp in Sources */,
 				882D4C721AF478B000FFB1E8 /* ofxUINumberDialer.cpp in Sources */,
 				882D4C7C1AF478B000FFB1E8 /* ofxUISuperCanvas.cpp in Sources */,
 				88F918D51AD4405E0045B219 /* ps3eye.cpp in Sources */,
+				882D4CDB1AF4AEF400FFB1E8 /* MyCameraInfo.mm in Sources */,
 				88F918EB1AD440640045B219 /* ofxSyphonServerDirectory.mm in Sources */,
 				882D4C6D1AF478B000FFB1E8 /* ofxUILabelToggle.cpp in Sources */,
+				882D4CD51AF4AEF400FFB1E8 /* Histogram.mm in Sources */,
 				882D4C811AF478B000FFB1E8 /* ofxUIToggleMatrix.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				882D4C641AF478B000FFB1E8 /* ofxUIFPS.cpp in Sources */,
@@ -930,6 +1060,9 @@
 				882D4C6B1AF478B000FFB1E8 /* ofxUILabel.cpp in Sources */,
 				882D4C7B1AF478B000FFB1E8 /* ofxUISpectrum.cpp in Sources */,
 				882D4C661AF478B000FFB1E8 /* ofxUIImage.cpp in Sources */,
+				882D4CDD1AF4AEF400FFB1E8 /* Resolvers.cpp in Sources */,
+				882D4CD71AF4AEF400FFB1E8 /* MiniGraphicsTools.cpp in Sources */,
+				882D4CD01AF4AEF400FFB1E8 /* AGC.mm in Sources */,
 				88F9196F1AD443C80045B219 /* flags.c in Sources */,
 				882D4C611AF478B000FFB1E8 /* ofxUIDragableLabelButton.cpp in Sources */,
 				882D4C621AF478B000FFB1E8 /* ofxUIDropDownList.cpp in Sources */,
@@ -945,13 +1078,17 @@
 				882D4C6A1AF478B000FFB1E8 /* ofxUIImageToggle.cpp in Sources */,
 				88F9196B1AD443C80045B219 /* ofxKinect.cpp in Sources */,
 				882D4C7E1AF478B000FFB1E8 /* ofxUITextArea.cpp in Sources */,
+				882D4CDA1AF4AEF400FFB1E8 /* MyCameraDriver.mm in Sources */,
 				882D4C851AF478B000FFB1E8 /* ofxUIWidgetWithLabel.cpp in Sources */,
 				88F9196A1AD443C80045B219 /* ofxKinectExtras.cpp in Sources */,
 				882D4C791AF478B000FFB1E8 /* ofxUISortableList.cpp in Sources */,
 				882D4C911AF478CE00FFB1E8 /* tinyxmlerror.cpp in Sources */,
+				882D4CD81AF4AEF400FFB1E8 /* MiscTools.cpp in Sources */,
 				882D4C781AF478B000FFB1E8 /* ofxUISlider.cpp in Sources */,
+				882D4CD21AF4AEF400FFB1E8 /* ControllerInterface.mm in Sources */,
 				88F918E91AD440640045B219 /* ofxSyphonClient.mm in Sources */,
 				882D4C5D1AF478B000FFB1E8 /* ofxUIBiLabelSlider.cpp in Sources */,
+				882D4CE01AF4AEF400FFB1E8 /* PS3EyeWindowAppDelegate.mm in Sources */,
 				88F9196D1AD443C80045B219 /* cameras.c in Sources */,
 				88F918EA1AD440640045B219 /* ofxSyphonServer.mm in Sources */,
 				882D4C651AF478B000FFB1E8 /* ofxUIFPSSlider.cpp in Sources */,
@@ -1059,7 +1196,7 @@
 					"/Users/jesse/Dev/openFrameworks/addons/ofxKinect/libs/libusb-1.0/lib/osx",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxKinect/libs/libusb-1.0/include/ ../../../addons/ofxKinect/libs/libusb-win32/include/ ../../../addons/ofxKinect/libs/libfreenect/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxKinect/libs/libusb-1.0/include/ ../../../addons/ofxKinect/libs/libusb-win32/include/ ../../../addons/ofxKinect/libs/libfreenect/include/ ../../../addons/ofxMacamPs3Eye/src/macam/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1086,7 +1223,7 @@
 					"/Users/jesse/Dev/openFrameworks/addons/ofxKinect/libs/libusb-1.0/lib/osx",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxKinect/libs/libusb-1.0/include/ ../../../addons/ofxKinect/libs/libusb-win32/include/ ../../../addons/ofxKinect/libs/libfreenect/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxKinect/libs/libusb-1.0/include/ ../../../addons/ofxKinect/libs/libusb-win32/include/ ../../../addons/ofxKinect/libs/libfreenect/include/ ../../../addons/ofxMacamPs3Eye/src/macam/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
