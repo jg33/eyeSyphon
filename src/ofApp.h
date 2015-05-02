@@ -31,7 +31,6 @@ private:
     bool bIsSmoothing;
     bool bIsCatchingGlitches= true ;
     
-    float glitchThreshold = 50
-    ;
+    float glitchThreshold = 40;
     float avgDiff;
 };

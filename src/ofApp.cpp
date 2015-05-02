@@ -3,11 +3,16 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetWindowTitle("eyeSyphon");
+    ofSetFrameRate(60);
+    ofSetVerticalSync(true);
     eye.setup(640, 480);
+    //eye.setDesiredFrameRate(30);
+    
+    
     syphon.setName("PS3 Eye");
     video.allocate(640, 480, OF_IMAGE_COLOR);
     prevFrame.allocate(640, 480, OF_IMAGE_COLOR);
-
+    
     video.clear();
     prevFrame.clear();
     //eye.setGain(255);
@@ -36,20 +41,25 @@ void ofApp::update(){
             
         }
         
-        if(!bIsCatchingGlitches || avgDiff < glitchThreshold){
+        if(!bIsCatchingGlitches || avgDiff <= glitchThreshold){
             
             video.setFromPixels(eye.getPixels());
 
             
         }else if(bIsCatchingGlitches && avgDiff > glitchThreshold) {
             cout<<"caught a glitch on 1! "<< avgDiff<<endl;
+            video.setFromPixels(eye.getPixels());
+
+        } else {
+            //video.setFromPixels(eye.getPixels());
+            
         }
         
     }else{
         //bHasNewFrame = false;
     }
 
-
+    
 }
 
 //--------------------------------------------------------------
